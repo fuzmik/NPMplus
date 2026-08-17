@@ -57,7 +57,7 @@ RUN apk upgrade --no-cache -a && \
 FROM zoeyvid/nginx-quic:627-python
 SHELL ["/bin/ash", "-eo", "pipefail", "-c"]
 ENV NODE_ENV=production
-ARG CRS_VER=v4.20.0
+ARG CRS_VER=v4.29.0
 
 COPY rootfs /
 COPY --from=backend /app /app
